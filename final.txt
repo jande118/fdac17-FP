@@ -1,0 +1,14 @@
+x = read.csv("/data/libraries.io.data/dependencies-1.0.0-2017-06-15.csv.gz");
+x[1:3,]
+table(x$Platform)
+
+
+ID,Platform,Project Name,Project ID,Version Number,Version ID,Dependency Name,
+Dependency Platform,Dependency Kind,Optional Dependency,Dependency Requirements,
+Dependency Project ID
+
+gunzip -c /data/libraries.io.data/dependencies-1.0.0-2017-06-15.csv.gz| head -50000 | gzip> deps.csv.gz
+
+
+gunzip -c /data/libraries.io.data/dependencies-1.0.0-2017-06-15.csv.gz| head -50000 | gzip> deps.csv
+
